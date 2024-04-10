@@ -1,6 +1,6 @@
 package sk.com.ymca.javaStart.lecture4.additional.task2;
 
-public class Methods {
+public class AreaAndVolumeOfCylinder {
     public double square(double r, double h) {
         return  2 * Math.PI * r * (r + h);
     }
