@@ -1,4 +1,4 @@
-package sk.com.ymca.javaStart.lecture5.homework;
+package sk.com.ymca.javaStart.lecture5.homework.ex1;
 
 import java.util.Scanner;
 
