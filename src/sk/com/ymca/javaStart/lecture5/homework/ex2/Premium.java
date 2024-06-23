@@ -17,23 +17,29 @@ import java.util.Scanner;
 public class Premium {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        System.out.println("Enter your salary:");
+        int salary = scan.nextInt();
+
         System.out.println("Enter your work experience:");
         int experience = scan.nextInt();
+        double bonus = 0;
 
         if (experience < 5) {
-            System.out.println("Your bonus is " + 10);
+            bonus = 0.1;
         } else if (experience < 10) {
-            System.out.println("Your bonus is " + 15);
+            bonus = 0.15;
         } else if (experience < 15) {
-            System.out.println("Your bonus is " + 25);
+            bonus = 0.25;
         } else if (experience < 20) {
-            System.out.println("Your bonus is " + 35);
+            bonus = 0.35;
         } else if (experience < 25) {
-            System.out.println("Your bonus is " + 45);
+            bonus = 0.45;
         } else if (experience >= 25) {
-            System.out.println("Your bonus is " + 50);
+            bonus = 0.50;
         } else {
             System.out.println("Error");
         }
+
+        System.out.println("Your bonus is " + salary * bonus);
     }
 }
