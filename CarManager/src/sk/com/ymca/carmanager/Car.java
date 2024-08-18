@@ -5,14 +5,14 @@ public class Car {
     int year;
     int price;
     int weight;
-    String color;
+    Color color;
 
     public Car(String model, int year, int price, int weight, String color) {
         this.model = model;
         this.year = year;
         this.price = price;
         this.weight = weight;
-        this.color = color;
+        this.color = Color.valueOf(color.toUpperCase());
     }
 
     @Override

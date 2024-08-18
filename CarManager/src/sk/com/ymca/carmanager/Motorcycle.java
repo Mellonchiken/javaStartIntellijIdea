@@ -5,7 +5,7 @@ public class Motorcycle {
     int year;
     int price;
     int weight;
-    String color;
+    Color color;
     String engineType;
     boolean isReadyToDrive;
 
@@ -14,7 +14,7 @@ public class Motorcycle {
         this.year = year;
         this.price = price;
         this.weight = weight;
-        this.color = color;
+        this.color = Color.valueOf(color.toUpperCase());
         this.engineType = engineType;
         this.isReadyToDrive = isReadyToDrive;
     }
