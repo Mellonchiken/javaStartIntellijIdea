@@ -1,7 +1,5 @@
 package sk.com.ymca.javaStart.lecture8.classwork.ex1;
 
-import sk.com.ymca.javaStart.lecture7.classwork.ex2.ArithmeticOperations;
-
 import java.util.Scanner;
 
 /*
@@ -10,19 +8,17 @@ import java.util.Scanner;
  */
 public class Calculator {
     public static void main(String[] args) {
-        sk.com.ymca.javaStart.lecture7.classwork.ex2.ArithmeticOperations res = new ArithmeticOperations();
+        sk.com.ymca.javaStart.lecture8.classwork.ex1.ArithmeticOperations res = new ArithmeticOperations();
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter first number:");
-        int number1 = scan.nextInt();
+        double number1 = scan.nextInt();
 
         System.out.println("Enter arithmetic operand (+, -, *, /):");
         String operand = scan.next();
 
         System.out.println("Enter second number:");
-        int number2 = scan.nextInt();
-
-        int result = 0;
+        double number2 = scan.nextInt();
 
         switch (operand) {
             case "+": {

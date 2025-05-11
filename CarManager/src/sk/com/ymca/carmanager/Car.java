@@ -1,5 +1,6 @@
 package sk.com.ymca.carmanager;
 
+import java.util.regex.Pattern;
 public class Car {
     String model;
     int year;
@@ -12,7 +13,7 @@ public class Car {
         this.year = year;
         this.price = price;
         this.weight = weight;
-        this.color = Color.valueOf(color.toUpperCase());
+        this.color = Color.valueOf(color.toUpperCase().replaceAll(String.valueOf(Pattern.CASE_INSENSITIVE), ""));
     }
 
     @Override
