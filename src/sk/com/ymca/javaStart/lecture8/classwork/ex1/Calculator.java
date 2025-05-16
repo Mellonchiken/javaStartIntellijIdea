@@ -12,13 +12,13 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter first number:");
-        double number1 = scan.nextInt();
+        int number1 = scan.nextInt();
 
         System.out.println("Enter arithmetic operand (+, -, *, /):");
         String operand = scan.next();
 
         System.out.println("Enter second number:");
-        double number2 = scan.nextInt();
+        int number2 = scan.nextInt();
 
         switch (operand) {
             case "+": {
